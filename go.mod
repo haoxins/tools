@@ -1,4 +1,4 @@
-module tools
+module github.com/pkg4go/tools
 
 go 1.14
 
