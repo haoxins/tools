@@ -9,7 +9,7 @@ import (
 // AssertError - Panic if error is not nil
 func AssertError(err error) {
 	if err != nil {
-		log.Fatalln(err)
+		log.Println(err)
 		panic(errors.Wrap(err, "[Assert error failed]"))
 	}
 }
