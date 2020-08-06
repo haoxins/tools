@@ -1,2 +1,4 @@
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
+github.com/pkg4go/assert v0.0.0-20160314160058-6e08ab636d3d h1:QyTzX3Ad5xsue85ceJTgGYdJ7pjFHNzhyegR9FdAj3o=
+github.com/pkg4go/assert v0.0.0-20160314160058-6e08ab636d3d/go.mod h1:F53ledKncvBmwkNHhNGG7rBOAHz6q/6xkbNavaw3Q0U=
