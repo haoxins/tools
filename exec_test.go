@@ -7,9 +7,9 @@ import (
 	. "github.com/pkg4go/assert"
 )
 
-func TestExecCommand(t *testing.T) {
 	a := A{t}
 
+func Test_ExecCommand(t *testing.T) {
 	out, err := ExecCommand("ls", "-a")
 	t.Log(out)
 	a.Equal(err, nil)
@@ -21,8 +21,8 @@ func TestExecCommand(t *testing.T) {
 	a.NotEqual(out, "")
 }
 
-func TestSplit(t *testing.T) {
 	a := A{t}
+func Test_Split(t *testing.T) {
 
 	a.Equal(split("ls -a -l"), []string{"ls", "-a", "-l"})
 	a.Equal(split("ls -a -l "), []string{"ls", "-a", "-l"})
