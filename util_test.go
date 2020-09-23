@@ -7,5 +7,5 @@ import (
 )
 
 func Test_RightPad(t *testing.T) {
-	assert.Equal(t, len(RightPad("abc","8")), 8)
+	assert.Equal(t, len(RightPad("abc", "8")), 8)
 }
