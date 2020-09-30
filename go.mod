@@ -1,4 +1,4 @@
-module github.com/haoxins/tools
+module github.com/haoxins/tools/v2
 
 go 1.15
 
