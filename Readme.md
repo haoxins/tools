@@ -1,8 +1,8 @@
 
-[![PkgGoDev](https://pkg.go.dev/badge/pkg4go/tools)](https://pkg.go.dev/pkg4go/tools)
+[![PkgGoDev](https://pkg.go.dev/badge/haoxins/tools)](https://pkg.go.dev/haoxins/tools)
 
 ## Tools
 
 ```sh
-$ go get -u github.com/pkg4go/tools
+$ go get -u github.com/haoxins/tools
 ```
