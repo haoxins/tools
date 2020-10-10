@@ -6,6 +6,7 @@ import (
 
 //
 // `zone` is always required in case you forget time zone in your business
+// `Mon Jan 2 15:04:05 -0700 MST 2006`
 //
 
 // ParseTime - parse time and location
