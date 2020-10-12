@@ -19,8 +19,8 @@ const (
 //
 
 // ParseTime - parse time and location
-func ParseTime(layout, date, zone string) (time.Time, *time.Location) {
-	t, e := time.Parse(layout, date)
+func ParseTime(zone, format, date string) (time.Time, *time.Location) {
+	t, e := time.Parse(format, date)
 	AssertError(e)
 	local, e := time.LoadLocation(zone)
 	AssertError(e)
@@ -29,14 +29,14 @@ func ParseTime(layout, date, zone string) (time.Time, *time.Location) {
 }
 
 // StartOfDate - return start time of date
-func StartOfDate(layout, date, zone string) time.Time {
-	t, local := ParseTime(layout, date, zone)
+func StartOfDate(zone, format, date string) time.Time {
+	t, local := ParseTime(zone, format, date)
 	return time.Date(t.Year(), t.Month(), t.Day(), 0, 0, 0, 0, local)
 }
 
 // EndOfDate - return end time of date
-func EndOfDate(layout, date, zone string) time.Time {
-	t, local := ParseTime(layout, date, zone)
+func EndOfDate(zone, format, date string) time.Time {
+	t, local := ParseTime(zone, format, date)
 	return time.Date(t.Year(), t.Month(), t.Day(), 23, 59, 59, 0, local)
 }
 
