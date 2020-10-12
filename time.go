@@ -7,6 +7,10 @@ import (
 const (
 	// TimeZoneShanghai - The time zone Shanghai
 	TimeZoneShanghai = "Asia/Shanghai"
+	// DateFmt1 - 2006-01-02
+	DateFmt1 = "2006-01-02"
+	// DateFmt2 - 2006-1-2
+	DateFmt2 = "2006-1-2"
 )
 
 //
@@ -42,7 +46,7 @@ func Yesterday(zone string, format string) string {
 		zone = TimeZoneShanghai
 	}
 	if format == "" {
-		format = "2006-01-02"
+		format = DateFmt1
 	}
 
 	local, err := time.LoadLocation(zone)
@@ -57,7 +61,7 @@ func Today(zone string, format string) string {
 		zone = TimeZoneShanghai
 	}
 	if format == "" {
-		format = "2006-01-02"
+		format = DateFmt1
 	}
 
 	local, err := time.LoadLocation(zone)
