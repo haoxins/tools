@@ -4,6 +4,11 @@ import (
 	"time"
 )
 
+const (
+	// TimeZoneShanghai - The time zone Shanghai
+	TimeZoneShanghai = "Asia/Shanghai"
+)
+
 //
 // `zone` is always required in case you forget time zone in your business
 // `Mon Jan 2 15:04:05 -0700 MST 2006`
@@ -34,7 +39,7 @@ func EndOfDate(layout, date, zone string) time.Time {
 // Yesterday - return yesterday date
 func Yesterday(zone string, format string) string {
 	if zone == "" {
-		zone = "Asia/Shanghai"
+		zone = TimeZoneShanghai
 	}
 	if format == "" {
 		format = "2006-01-02"
@@ -49,7 +54,7 @@ func Yesterday(zone string, format string) string {
 // Today - return today date
 func Today(zone string, format string) string {
 	if zone == "" {
-		zone = "Asia/Shanghai"
+		zone = TimeZoneShanghai
 	}
 	if format == "" {
 		format = "2006-01-02"
