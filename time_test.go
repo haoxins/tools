@@ -8,7 +8,7 @@ import (
 )
 
 func Test_ParseTime(t *testing.T) {
-	r, local := ParseTime("Mon, 01/02/06, 03:04PM", "Thu, 05/19/11, 10:47PM", "Asia/Shanghai")
+	r, local := ParseTime("Mon, 01/02/06, 03:04PM", "Thu, 05/19/11, 10:47PM", TimeZoneShanghai)
 	assert.Equal(t, "2011-05-19T22:47:00Z", r.Format(time.RFC3339))
 	assert.Equal(t, TimeZoneShanghai, local.String())
 
