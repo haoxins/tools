@@ -21,9 +21,9 @@ const (
 // ParseTime - parse time and location
 func ParseTime(zone, format, date string) (time.Time, *time.Location) {
 	t, e := time.Parse(format, date)
-	AssertError(e)
+	PanicError(e)
 	local, e := time.LoadLocation(zone)
-	AssertError(e)
+	PanicError(e)
 
 	return t, local
 }
@@ -50,7 +50,7 @@ func Yesterday(zone string, format string) string {
 	}
 
 	local, err := time.LoadLocation(zone)
-	AssertError(err)
+	PanicError(err)
 
 	return time.Now().In(local).AddDate(0, 0, -1).Format(format)
 }
@@ -65,7 +65,7 @@ func Today(zone string, format string) string {
 	}
 
 	local, err := time.LoadLocation(zone)
-	AssertError(err)
+	PanicError(err)
 
 	return time.Now().In(local).Format(format)
 }
