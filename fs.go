@@ -3,6 +3,7 @@ package tools
 import (
 	"io"
 	"os"
+	"path/filepath"
 )
 
 // CopyFile copy file
@@ -25,4 +26,30 @@ func CopyFile(from, to string) error {
 	}
 
 	return nil
+}
+
+// Getwd ...
+func Getwd() string {
+	dir, err := os.Getwd()
+	PanicError(err)
+	return dir
+}
+
+// Resolve ...
+func Resolve(from string, to string) string {
+	if filepath.IsAbs(to) {
+		return to
+	}
+
+	if filepath.IsAbs(from) {
+		return filepath.Join(from, to)
+	}
+
+	abs, err := filepath.Abs(from)
+
+	if err != nil {
+		abs = "/"
+	}
+
+	return filepath.Join(abs, to)
 }
