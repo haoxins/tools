@@ -5,5 +5,5 @@ import (
 )
 
 func Test_Debug(t *testing.T) {
-	Debug("Debug Debug Debug %d", 12306)
+	Debug("Debug Debug Debug %d %d", 12306, 666)
 }
