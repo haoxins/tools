@@ -4,3 +4,4 @@
 ### Some utils' links
 
 * [Left and Right padding of strings](https://github.com/willf/pad)
+* [Colored pretty printer](https://github.com/k0kubun/pp)
