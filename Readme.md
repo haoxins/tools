@@ -3,5 +3,6 @@
 
 ### Some utils' links
 
+* [uber-go/multierr](https://github.com/uber-go/multierr)
 * [Left and Right padding of strings](https://github.com/willf/pad)
 * [Colored pretty printer](https://github.com/k0kubun/pp)
