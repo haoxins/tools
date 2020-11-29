@@ -21,3 +21,4 @@
 * [CLI UI - bubbletea](https://github.com/charmbracelet/bubbletea)
 * [CLI - spf13/cobra](https://github.com/spf13/cobra)
 * [Colored pretty printer](https://github.com/k0kubun/pp)
+* [Pretty](https://github.com/kr/pretty)
