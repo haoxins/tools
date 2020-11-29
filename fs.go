@@ -53,3 +53,9 @@ func Resolve(from string, to string) string {
 
 	return filepath.Join(abs, to)
 }
+
+// Exists ...
+func Exists(path string) bool {
+	_, err := os.Stat(path)
+	return !os.IsNotExist(err)
+}
