@@ -18,5 +18,5 @@ func Test_Resolve(t *testing.T) {
 
 func Test_Exists(t *testing.T) {
 	assert.Equal(t, true, Exists(Resolve("", "fs_test.go")))
-	assert.Equal(t, false, Exists(Resolve("", "fs_test_not_exists.go")))
+	assert.Equal(t, false, Exists(Resolve("", "fs_not_exists.go")))
 }
