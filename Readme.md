@@ -3,6 +3,8 @@
 
 ### Some utils' links
 
+* [Casbin](https://github.com/casbin/casbin)
+
 * [uber-go/multierr](https://github.com/uber-go/multierr)
 * [hashicorp/go-multierror](https://github.com/hashicorp/go-multierror)
 * [Left and Right padding of strings](https://github.com/willf/pad)
