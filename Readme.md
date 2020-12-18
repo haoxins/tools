@@ -13,7 +13,6 @@
 * [Gabs - dynamic JSON structures](https://github.com/Jeffail/gabs)
 
 * [Config - Viper](https://github.com/spf13/viper)
-* [Cron](https://github.com/robfig/cron)
 
 * [Resty](https://github.com/go-resty/resty)
 * [Validator](https://github.com/go-playground/validator)
